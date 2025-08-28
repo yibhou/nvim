@@ -3,8 +3,11 @@ return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
     ensure_installed = {
-      "vue",
+      "cpp",
+      "java",
+      "rust",
       "scss",
+      "vue",
     },
   },
 }

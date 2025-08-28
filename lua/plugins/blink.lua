@@ -17,6 +17,7 @@ return {
       end,
     },
     keymap = {
+      -- ~/.local/share/nvim/lazy/blink.cmp/lua/blink/cmp/keymap/presets.lua
       preset = "super-tab",
       ["<Tab>"] = {
         "select_next",
@@ -36,6 +37,8 @@ return {
         "select_and_accept",
         "fallback",
       },
+      ["<C-y>"] = { "select_and_accept" },
+      ["<C-e>"] = { "cancel" },
     },
   },
 }

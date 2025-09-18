@@ -36,6 +36,13 @@ return {
     vim.keymap.set({ "n", "o", "x" }, "sr", function() require("flash").treesitter() end, { desc = "Flash Treesitter" })
     vim.keymap.set({ "n", "o", "x" }, "sw", function() require("flash").jump({ pattern = vim.fn.expand("<cword>") }) end, { desc = "Flash Word" })
     vim.keymap.set("c", "<c-s>", function() require("flash").toggle() end, { desc = "Flash Toggle" })
+    vim.keymap.set({ "n", "o", "x" }, "sL", function()
+      require("flash").jump({
+        search = { mode = "search", max_length = 0 },
+        label = { after = { 0, 0 } },
+        pattern = "^",
+      })
+    end, { desc = "Flash Line" })
   end,
   keys = false,
 }

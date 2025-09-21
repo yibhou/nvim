@@ -22,6 +22,7 @@ return {
         desc = "Disable Comfy Line Numbers",
         icon = { icon = " ", color = "green" },
       },
+      { "gke", "<cmd>Neotree focus<cr>", desc = "Neotree Focus" },
       { "gkr", "<cmd>Neotree reveal<cr>", desc = "Neotree Reveal" },
 
       { "gs", group = "search/replace", icon = { icon = "", color = "cyan" } },

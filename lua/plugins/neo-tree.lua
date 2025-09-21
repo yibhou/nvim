@@ -54,9 +54,11 @@ return {
       else
         grug_far.get_instance("explorer"):open()
       end
-      -- doing it seperately because multiple paths doesn't open work when passed with open
-      -- updating the prefills without clearing the search and other fields
-      grug_far.get_instance("explorer"):update_input_values(prefills, false)
+      vim.schedule(function()
+        -- doing it seperately because multiple paths doesn't open work when passed with open
+        -- updating the prefills without clearing the search and other fields
+        grug_far.get_instance("explorer"):update_input_values(prefills, false)
+      end)
     end
 
     opts.commands = vim.tbl_extend("keep", opts.commands or {}, {

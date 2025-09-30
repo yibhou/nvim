@@ -35,8 +35,9 @@ return {
       },
       filtered_items = {
         hide_dotfiles = false,
-        hide_by_name = {
+        never_show = {
           ".git",
+          ".DS_Store",
         },
       },
       follow_current_file = {

@@ -18,7 +18,6 @@ return {
       },
     },
     config = function(_, opts)
-      vim.api.nvim_set_hl(0, "DiffAdd", { bg = "#1d5800" })
       require("git-conflict").setup(opts)
     end,
   },

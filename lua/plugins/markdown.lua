@@ -31,6 +31,8 @@ return {
       },
       heading = {
         position = "inline",
+        width = "block",
+        left_margin = 0,
         left_pad = 1,
         right_pad = 1,
       },
@@ -61,5 +63,15 @@ return {
         concealcursor = { rendered = "nvc" },
       },
     },
+    config = function(_, opts)
+      require("render-markdown").setup(opts)
+
+      vim.api.nvim_set_hl(0, "RenderMarkdownH1Bg", { bg = "#6A4599", fg = "#CBA6F7" })
+      vim.api.nvim_set_hl(0, "RenderMarkdownH2Bg", { bg = "#7D2850", fg = "#FF79C6" })
+      vim.api.nvim_set_hl(0, "RenderMarkdownH3Bg", { bg = "#3D7D4A", fg = "#A6E3A1" })
+      vim.api.nvim_set_hl(0, "RenderMarkdownH4Bg", { bg = "#A05820", fg = "#FAB387" })
+      vim.api.nvim_set_hl(0, "RenderMarkdownH5Bg", { bg = "#3D7575", fg = "#94E2D5" })
+      vim.api.nvim_set_hl(0, "RenderMarkdownH6Bg", { bg = "#4A4A99", fg = "#B4BEFE" })
+    end,
   },
 }

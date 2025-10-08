@@ -16,9 +16,10 @@ return {
         return {}
       end,
     },
+    -- https://cmp.saghen.dev/configuration/keymap#keymap
     keymap = {
       -- ~/.local/share/nvim/lazy/blink.cmp/lua/blink/cmp/keymap/presets.lua
-      preset = "super-tab",
+      -- preset = "super-tab",
       ["<Tab>"] = {
         "select_next",
         require("blink.cmp.keymap.presets").get("super-tab")["<Tab>"][1],

@@ -12,6 +12,7 @@ return {
     },
     servers = {
       cssls = {},
+      marksman = {},
     },
   },
 }

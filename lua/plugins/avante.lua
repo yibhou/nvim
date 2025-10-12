@@ -19,6 +19,7 @@ return {
       {
         "HakonHarnes/img-clip.nvim",
         event = "VeryLazy",
+        ft = { "markdown", "Avante" },
         opts = {
           default = {
             embed_image_as_base64 = false,

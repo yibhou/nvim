@@ -14,6 +14,6 @@ return {
   config = function(_, opts)
     require("dropbar").setup(opts)
 
-    vim.keymap.set("n", "gkp", require("dropbar.api").pick, { desc = "Dropbar Pick" })
+    vim.keymap.set("n", "gkd", require("dropbar.api").pick, { desc = "Dropbar Pick" })
   end,
 }

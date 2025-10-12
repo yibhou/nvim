@@ -22,6 +22,7 @@ return {
         desc = "Disable Comfy Line Numbers",
         icon = { icon = " ", color = "green" },
       },
+      { "gkb", "<cmd>BufferLinePick<cr>", desc = "Buffer Pick", mode = { "n", "v" } },
       { "gke", "<cmd>Neotree focus<cr>", desc = "Neotree Focus" },
       { "gkr", "<cmd>Neotree reveal<cr>", desc = "Neotree Reveal" },
 
@@ -51,7 +52,6 @@ return {
         noremap = false,
         mode = { "n", "v" },
       },
-      { "<leader>bs", "<cmd>BufferLinePick<cr>", desc = "Pick Buffer", mode = { "n", "v" } },
     },
   },
 }

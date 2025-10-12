@@ -1,4 +1,5 @@
 return {
+  { "catppuccin/nvim", enabled = false },
   { "loctvl842/monokai-pro.nvim", enabled = false },
   { "Mofiqul/vscode.nvim", enabled = false },
   { "navarasu/onedark.nvim", enabled = false },

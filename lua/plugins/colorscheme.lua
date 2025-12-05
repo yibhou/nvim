@@ -52,6 +52,12 @@ return {
     config = function()
       require("dracula").setup()
       vim.cmd.colorscheme("dracula")
+
+      -- :Inspect
+      vim.api.nvim_set_hl(0, "GitConflictCurrent", { bg = "#315A46" })
+      vim.api.nvim_set_hl(0, "GitConflictCurrentLabel", { bg = "#3E9E5D" })
+      vim.api.nvim_set_hl(0, "GitConflictIncoming", { bg = "#4A4263" })
+      vim.api.nvim_set_hl(0, "GitConflictIncomingLabel", { bg = "#7B65A3" })
     end,
   },
 }

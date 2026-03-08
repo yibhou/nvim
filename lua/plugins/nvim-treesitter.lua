@@ -4,6 +4,7 @@ return {
   opts = {
     ensure_installed = {
       "cpp",
+      "go",
       "java",
       "rust",
       "scss",

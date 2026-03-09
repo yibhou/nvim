@@ -52,10 +52,6 @@ return {
     },
   },
 
-  { "coder/claudecode.nvim", enabled = false },
-
-  { "CopilotC-Nvim/CopilotChat.nvim", enabled = false },
-
   {
     "saghen/blink.cmp",
     dependencies = {

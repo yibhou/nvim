@@ -34,6 +34,8 @@ return {
       { "gss", function() require("flash").jump() end, desc = "Flash", mode = { "n", "v" } },
       { "gsr", "<cmd>GrugFar<cr>", desc = "Search and Replace", mode = { "n", "v" } },
 
+      { "gt", nil, desc = "Terminal", icon = { icon = "", color = "green" } },
+
       { "<leader>a", nil, desc = "AI/Claude Code" },
       {
         "<leader>b",

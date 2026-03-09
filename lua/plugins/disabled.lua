@@ -1,3 +1,3 @@
 return {
-  { "folke/flash.nvim", enabled = true },
+  { "coder/claudecode.nvim", enabled = true },
 }

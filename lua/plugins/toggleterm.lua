@@ -5,7 +5,7 @@ return {
   event = "VeryLazy",
   config = function()
     require("toggleterm").setup({
-      open_mapping = "gkt",
+      open_mapping = "gt",
     })
 
     function _G.set_terminal_keymaps()
@@ -21,7 +21,11 @@ return {
     -- if you only want these mappings for toggle term use term://*toggleterm#* instead
     vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
   end,
+  -- stylua: ignore
   keys = {
-    { "gkT", "<Cmd>TermSelect<CR>", desc = "Select Terminal" },
+    { "gtf", function() vim.cmd(vim.v.count1 .. "ToggleTerm direction=float") end, desc = "Toggle Terminal (Float)" },
+    { "gth", function() vim.cmd(vim.v.count1 .. "ToggleTerm direction=horizontal") end, desc = "Toggle Terminal (Horizontal)" },
+    { "gtv", function() vim.cmd(vim.v.count1 .. "ToggleTerm direction=vertical") end, desc = "Toggle Terminal (Vertical)" },
+    { "gtl", "<Cmd>TermSelect<CR>", desc = "Select Terminal" },
   },
 }

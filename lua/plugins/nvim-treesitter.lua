@@ -5,6 +5,7 @@ return {
     ensure_installed = {
       "cpp",
       "go",
+      "hurl",
       "java",
       "rust",
       "scss",

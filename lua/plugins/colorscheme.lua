@@ -50,7 +50,21 @@ return {
     "Mofiqul/dracula.nvim",
     priority = 1000,
     config = function()
-      require("dracula").setup()
+      require("dracula").setup({
+        overrides = function(colors)
+          return {
+            MiniDiffSignAdd = { fg = colors.green },
+            MiniDiffSignChange = { fg = colors.cyan },
+            MiniDiffSignDelete = { fg = colors.red },
+            MiniDiffOverAdd = { bg = "#1A3328" },
+            MiniDiffOverChange = { fg = colors.red, bg = "#3D1A1A" },
+            MiniDiffOverChangeBuf = { fg = colors.green, bg = "#1A3328" },
+            MiniDiffOverContext = { fg = colors.fg, bg = "#3D1A1A" },
+            MiniDiffOverContextBuf = { bg = "#1A3328" },
+            MiniDiffOverDelete = { bg = "#3D1A1A" },
+          }
+        end,
+      })
       vim.cmd.colorscheme("dracula")
 
       -- :Inspect

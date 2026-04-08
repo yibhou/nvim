@@ -21,4 +21,14 @@ return {
       require("git-conflict").setup(opts)
     end,
   },
+
+  -- https://github.com/nvim-mini/mini.diff
+  {
+    "nvim-mini/mini.diff",
+    opts = {
+      view = {
+        signs = { add = "▌", change = "▌", delete = "▸" },
+      },
+    },
+  },
 }

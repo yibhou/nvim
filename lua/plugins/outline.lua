@@ -3,8 +3,13 @@ return {
   "hedyhli/outline.nvim",
   cmd = "Outline",
   opts = {
+    outline_window = {
+      auto_jump = false,
+      show_numbers = true,
+      show_relative_numbers = true,
+    },
     preview_window = {
-      auto_preview = true,
+      auto_preview = false,
     },
   },
   config = function(_, opts)

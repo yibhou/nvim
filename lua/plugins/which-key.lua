@@ -37,7 +37,7 @@ return {
 
       { "gt", nil, desc = "Terminal", icon = { icon = "", color = "green" } },
 
-      { "<leader>a", nil, desc = "AI/Claude Code" },
+      { "<leader>a", nil, desc = "AI" },
       {
         "<leader>b",
         function()

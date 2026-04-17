@@ -7,7 +7,4 @@ vim.g.autoformat = false
 
 vim.opt.relativenumber = false
 
-if vim.g.neovide then
-  vim.o.guifont = "JetBrainsMono Nerd Font:h12"
-  vim.opt.linespace = 0
-end
+vim.env.ASDF_NODEJS_VERSION = "22.22.0"

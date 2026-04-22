@@ -12,10 +12,10 @@ return {
       "nvim-treesitter/nvim-treesitter",
       "nvim-tree/nvim-web-devicons",
     },
-    ft = { "markdown", "Avante" },
+    ft = { "markdown" },
     opts = {
       enabled = true,
-      file_types = { "markdown", "Avante" },
+      file_types = { "markdown" },
       anti_conceal = {
         ignore = {
           bullet = true,

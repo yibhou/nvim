@@ -19,6 +19,7 @@ return {
     opts = {
       hide_root_node = true,
       retain_hidden_root_indent = true,
+      log_level = vim.log.levels.INFO,
       default_component_configs = {
         file_size = {
           enabled = false,

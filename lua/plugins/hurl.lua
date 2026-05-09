@@ -11,6 +11,7 @@ return {
     auto_close = false,
   },
   keys = {
-    { "gkh", "<Cmd>HurlRunnerAt<CR>", desc = "Hurl Runner" },
+    { "gkh", "<Cmd>HurlRunnerAt<CR>", desc = "Hurl Runner (Entry)" },
+    { "gkH", "<Cmd>HurlRunner<CR>", desc = "Hurl Runner" },
   },
 }

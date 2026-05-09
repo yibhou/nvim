@@ -50,7 +50,43 @@ return {
     "Mofiqul/dracula.nvim",
     priority = 1000,
     config = function()
+      vim.api.nvim_create_autocmd("ColorScheme", {
+        pattern = "dracula",
+        callback = function()
+          -- :Inspect
+          vim.api.nvim_set_hl(0, "GitConflictCurrent", { bg = "#315A46" })
+          vim.api.nvim_set_hl(0, "GitConflictCurrentLabel", { bg = "#3E9E5D" })
+          vim.api.nvim_set_hl(0, "GitConflictIncoming", { bg = "#4A4263" })
+          vim.api.nvim_set_hl(0, "GitConflictIncomingLabel", { bg = "#7B65A3" })
+        end,
+      })
       require("dracula").setup({
+        colors = {
+          bg = "#282A36",
+          fg = "#F8F8F2",
+          selection = "#44475A",
+          comment = "#6272A4",
+          red = "#F87359",
+          orange = "#F8B659",
+          yellow = "#F1FA8C",
+          green = "#66F859",
+          purple = "#BD93F9",
+          cyan = "#5CF5DB",
+          pink = "#F859A8",
+          bright_red = "#FF6E6E",
+          bright_green = "#69FF94",
+          bright_yellow = "#FFFFA5",
+          bright_blue = "#D6ACFF",
+          bright_magenta = "#FF92DF",
+          bright_cyan = "#A4FFFF",
+          bright_white = "#FFFFFF",
+          menu = "#21222C",
+          visual = "#3E4452",
+          gutter_fg = "#4B5263",
+          nontext = "#3B4048",
+          white = "#ABB2BF",
+          black = "#191A21",
+        },
         overrides = function(colors)
           return {
             MiniDiffSignAdd = { fg = colors.green },
@@ -62,16 +98,11 @@ return {
             MiniDiffOverContext = { fg = colors.fg, bg = "#3D1A1A" },
             MiniDiffOverContextBuf = { bg = "#1A3328" },
             MiniDiffOverDelete = { bg = "#3D1A1A" },
+            ComplHint = { fg = colors.comment },
           }
         end,
       })
       vim.cmd.colorscheme("dracula")
-
-      -- :Inspect
-      vim.api.nvim_set_hl(0, "GitConflictCurrent", { bg = "#315A46" })
-      vim.api.nvim_set_hl(0, "GitConflictCurrentLabel", { bg = "#3E9E5D" })
-      vim.api.nvim_set_hl(0, "GitConflictIncoming", { bg = "#4A4263" })
-      vim.api.nvim_set_hl(0, "GitConflictIncomingLabel", { bg = "#7B65A3" })
     end,
   },
 }

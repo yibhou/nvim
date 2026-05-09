@@ -65,15 +65,6 @@ return {
     },
   },
 
-  -- https://github.com/zbirenbaum/copilot.lua
-  {
-    "zbirenbaum/copilot.lua",
-    enabled = false,
-    opts = {
-      copilot_node_command = vim.fn.expand("$HOME/.asdf/installs/nodejs/22.22.0/bin/node"),
-    },
-  },
-
   -- https://github.com/coder/claudecode.nvim
   {
     "coder/claudecode.nvim",
@@ -120,5 +111,10 @@ return {
   {
     "folke/sidekick.nvim",
     opts = {},
+    -- stylua: ignore
+    keys = {
+      { "<leader>ac", function() require("sidekick.cli").toggle({ name = "claude", focus = true }) end, desc = "Sidekick Toggle Claude" },
+      { "<leader>aC", function() require("sidekick.cli").toggle({ name = "codex", focus = true }) end, desc = "Sidekick Toggle Codex" },
+    },
   },
 }

@@ -62,7 +62,7 @@ return {
         local grug_far = require("grug-far")
 
         if not grug_far.has_instance("explorer") then
-          grug_far.open({ instanceName = "explorer" })
+          grug_far.open({ instanceName = "explorer", windowCreationCommand = "botright vsplit" })
         else
           grug_far.get_instance("explorer"):open()
         end

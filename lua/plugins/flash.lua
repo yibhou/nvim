@@ -5,7 +5,7 @@ return {
   vscode = true,
   opts = {
     label = {
-      uppercase = false,
+      uppercase = true,
       rainbow = {
         enabled = true,
       },

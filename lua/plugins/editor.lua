@@ -42,4 +42,46 @@ return {
       },
     },
   },
+  -- :help telescope.defaults
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      defaults = {
+        history = {
+          limit = 100,
+        },
+        mappings = {
+          i = {
+            ["<Up>"] = require("telescope.actions").cycle_history_prev,
+            ["<Down>"] = require("telescope.actions").cycle_history_next,
+            ["<C-h>"] = require("telescope.actions").results_scrolling_left,
+            ["<C-l>"] = require("telescope.actions").results_scrolling_right,
+
+            ["<C-d>"] = false,
+            ["<C-f>"] = false,
+            ["<C-k>"] = false,
+            ["<C-u>"] = false,
+            ["<M-f>"] = false,
+          },
+          n = {
+            ["<C-h>"] = require("telescope.actions").results_scrolling_left,
+            ["<C-l>"] = require("telescope.actions").results_scrolling_right,
+            ["<C-n>"] = require("telescope.actions").move_selection_next,
+            ["<C-p>"] = require("telescope.actions").move_selection_previous,
+
+            ["<M-h>"] = require("telescope.actions").preview_scrolling_left,
+            ["<M-j>"] = require("telescope.actions").preview_scrolling_down,
+            ["<M-k>"] = require("telescope.actions").preview_scrolling_up,
+            ["<M-l>"] = require("telescope.actions").preview_scrolling_right,
+
+            ["<C-d>"] = false,
+            ["<C-f>"] = false,
+            ["<C-k>"] = false,
+            ["<C-u>"] = false,
+            ["<M-f>"] = false,
+          },
+        },
+      },
+    },
+  },
 }

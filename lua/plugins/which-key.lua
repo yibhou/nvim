@@ -9,7 +9,7 @@ return {
       return true
     end,
     spec = {
-      { "ga", nil, desc = "AI" },
+      { "gA", nil, desc = "AI" },
       { "gk", group = "keys", icon = { icon = "", color = "cyan" } },
       {
         "gkl",

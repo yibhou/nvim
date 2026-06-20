@@ -85,13 +85,13 @@ return {
     },
     -- stylua: ignore
     keys = {
-      { "gan", function() require("cursorcli").new_chat() end, mode = "n", desc = "Cursor: New chat" },
-      { "gas", function() require("cursorcli").select_chat() end, mode = "n", desc = "Cursor: Select chat" },
-      { "gat", "<Cmd>CursorCliToggle<CR>", mode = "n", desc = "Cursor: Toggle" },
-      { "gaa", function() require("cursorcli").add_visual_selection() end, mode = "x", desc = "Cursor: Add visual selection" },
-      { "gak", function() require("cursorcli").quick_edit() end, mode = "x", desc = "Cursor: Quick edit" },
+      { "gAn", function() require("cursorcli").new_chat() end, mode = "n", desc = "Cursor: New chat" },
+      { "gAs", function() require("cursorcli").select_chat() end, mode = "n", desc = "Cursor: Select chat" },
+      { "gAt", "<Cmd>CursorCliToggle<CR>", mode = "n", desc = "Cursor: Toggle" },
+      { "gAa", function() require("cursorcli").add_visual_selection() end, mode = "x", desc = "Cursor: Add visual selection" },
+      { "gAk", function() require("cursorcli").quick_edit() end, mode = "x", desc = "Cursor: Quick edit" },
       {
-        "gab",
+        "gAb",
         function()
           local bufnr = vim.api.nvim_get_current_buf()
           local filename = vim.api.nvim_buf_get_name(bufnr)

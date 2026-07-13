@@ -1,4 +1,18 @@
 return {
+  -- https://github.com/yibhou/nvim-get-ref
+  {
+    "yibhou/nvim-get-ref",
+    event = "VeryLazy",
+    config = function()
+      require("nvim-get-ref").setup({
+        path_style = "cwd",
+        keymaps = {
+          visual = "<leader>ay",
+          normal = "<leader>ay",
+        },
+      })
+    end,
+  },
   -- https://github.com/chentoast/marks.nvim
   {
     "chentoast/marks.nvim",

@@ -13,6 +13,5 @@ return {
   keys = {
     { "gH", "<Cmd>Lspsaga finder<CR>", desc = "Lspsaga Finder" },
     { "gh", "<Cmd>Lspsaga hover_doc<CR>", desc = "Lspsaga Hover" },
-    { "gkR", "<Cmd>Lspsaga rename<CR>", desc = "Lspsaga Rename Symbol" },
   },
 }
